@@ -6,6 +6,7 @@ import Login from "./assets/pages/Login"
 import Register from "./assets/pages/Register"
 import ProductList from "./assets/pages/ProductList"
 import SingleProduct from "./assets/pages/SingleProduct"
+import Footer from "./components/Footer"
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +38,7 @@ function App() {
     <>
     
      <RouterProvider router={router}/>
+     
     </>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../../components/Footer';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +22,9 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <div className=' w-[40%] bg-white px-4 mx-auto rounded-md py-9'>
+<>
+    <div className=''>
+      <div className=' w-[40%] bg-white px-4 mx-auto rounded-md py-28'>
         <h1 className='text-2xl font-semibold py-3'>Login</h1>
         <form onSubmit={handleSubmit} className='flex flex-col  mx-auto'>
           <label className='mt-4 mb-2'>Email</label>
@@ -49,6 +51,8 @@ const Login = () => {
         </form>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
